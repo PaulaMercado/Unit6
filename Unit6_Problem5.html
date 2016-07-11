@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number Generator</title>
+</head>
+<body>
+<p>Enter a two numbers separated by a space.</p>
+<div>
+    <input type= "text" id="userInput" />
+    <input type= "button" id="enter" value="Enter" />
+</div>
+
+<script>
+
+    document.getElementById("enter").onclick = function() {
+        var userInput = document.getElementById("userInput").value.split(" ");
+        var x = parseInt(userInput[0]);
+        var y = parseInt(userInput[1]);
+        var firstNumber = Math.floor(Math.random() * ((y-x)+1) + x);
+        var secondNumber = Math.floor(Math.random() * ((y-x)+1) + x);
+
+        alert("Your numbers are " + firstNumber + " and " + secondNumber);
+    }
+
+</script>
+</body>
+</html>

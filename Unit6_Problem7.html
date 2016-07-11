@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<div>
+    <input type= "text" id="userInput" />
+    <input type= "button" id="enter" value="Enter" />
+</div>
+
+<script>
+
+    document.getElementById("enter").onclick = function() {
+        var userInput = document.getElementById("userInput").value;
+        var i = 0
+        var total = 0
+        for (; i < userInput.length; i += 1) {
+            if (userInput[i] == '0') {
+                total += 1
+            }
+            }
+            return total;
+        }
+
+    /*Write a function that returns the number of zeros in a given array.
+    For example, the call numberOfZeros([ 4, 0, false, 5, 0]) should return 2.
+     */
+</script>
+</body>
+</html>

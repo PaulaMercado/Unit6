@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h6>Enter a string containing numbers separated by spaces</h6>
+<input type= "text" id="userInput" />
+<input type= "button" id="enter" value="Enter" />
+
+<script>
+
+    document.getElementById("enter").onclick = function() {
+        var userInput = document.getElementById("userInput").value.split(" ");
+
+        var total = 0
+        var i = 0
+        for (; i < userInput.length; i += 1){
+            total += parseFloat(userInput[i]);
+        }
+        var average = (total/i);
+        alert(average);
+    }
+
+</script>
+</body>
+</html>
