@@ -2,18 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Zero Counter</title>
 </head>
 <body>
-<div>
-    <input type= "text" id="userInput" />
-    <input type= "button" id="enter" value="Enter" />
-</div>
 
 <script>
 
-    document.getElementById("enter").onclick = function() {
-        var userInput = document.getElementById("userInput").value;
+    var numberOfZeros = function(userInput) {
         var i = 0
         var total = 0
         for (; i < userInput.length; i += 1) {
